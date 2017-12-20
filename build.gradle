@@ -1,0 +1,23 @@
+apply plugin: 'java'
+
+mainClassName = 'com.akka.App'
+
+repositories {
+  jcenter()
+}
+
+jar {
+  baseName = 'akka'
+  version = '0.1.0'
+
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+dependencies {
+  compile 'org.slf4j:slf4j-api:1.7.25'
+  compile 'org.projectlombok:1.16.18'
+  compile 'org.apache.commons.commons-lang3:3.7'
+
+  testCompile 'junit:junit:4.12'
+}
